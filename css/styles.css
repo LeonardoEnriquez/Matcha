@@ -7,13 +7,13 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #fffbf7;
+    background-color: white;
     box-sizing: border-box;
     text-align: middle;    
 }
 
 .fixed-header {
-    background-color: #fffbf7;
+    background-color: white;
     width: 100%;
     text-emphasis: auto;
 }
@@ -50,20 +50,20 @@ body {
 .navbar {
     width: 70%;
     color: #025157;
-    margin-top:30px;
+    margin-top:15px;
 }
 
 .action {
     width: 15%;
     font-size: 14px;
-    text-align: center;
+    text-align: center;    
 }
 
 .menu>* {
     text-align: center;
     margin: 0px 15px;
     color: #025157;
-    display: inline;
+    display: inline-block;
     margin-block-start: 0px;
     
 }
@@ -72,11 +72,13 @@ body {
     color: #67b54b;
     width: 100px;
     height: 20px;
-    text-align: left;
+    margin-right: 5px;
+    text-align: right;
 }
 
 .action button {
     background-color: #67b54b;
+    font-size: 12px;
     color: white;
     height: 30px;
     padding-left: 10px;
@@ -104,27 +106,26 @@ main h2 {
     font-size: 20px;
 }
 
+
 .signup-form input {
     color: #46484c;
-    height: 30px;
+    height: auto;
     width: 250px;
+    font-size: 14px;
     text-align: center;
-    margin-left: 0px;
     border-style: solid;
-    border-radius: 5%;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 .signup-form button {
     color: #fff;
     background-color: #0f4447;
-    height: 35px;
-    width: 150px;
-    text-align: center;
-    margin-left: -10 px;
-    padding-left: 0 px;
-    border-style: none;
-    border-radius: 5%;
+    height: auto;
+    width: 150px;    
+    border-radius: 5px;
 }
+
 
 .main p {
     color: #626366;
@@ -304,7 +305,7 @@ main h2 {
 .success-stories {
     background-color: #a1d683;    
     padding: 5% 10%;
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;   
@@ -313,12 +314,11 @@ main h2 {
     
 }
 
-.success-stories > div {   
+/* .success-stories > div {   
    text-align: center;
    line-height: 25px;
-   font-size: 20px;
-   
-}
+   font-size: 20px;   
+} */
 
 .stories-content {
     display: flex;
@@ -331,12 +331,10 @@ main h2 {
 }
 
 .stories-content .overview {
-    background-color: #a1d683;
-    
+    background-color: #a1d683;    
 }
 .stories-content .brand {
-    background-color:#a1d683;
-        
+    background-color:#a1d683;        
 }
 
 .stories-content .overview h2 {
@@ -363,7 +361,7 @@ main h2 {
     font-weight: 600;
     margin-left: 0;
     background-color: #025157;
-    color: #fff;
+    color: white;
     border: none;
     width: 200px;
 }
@@ -371,32 +369,30 @@ main h2 {
 .stories-content .brand img {
     background-color: #a1d683;
     width: 40%;   
-    margin-top:20px;
-    
+    margin-top:20px;    
 }
-
 
 .success-stories .stories-content {
     background-color: #a1d683;
     flex-wrap: nowrap;        
     display: flex;
     flex-direction: column;
-
 }
 /* Inicia carrusel*/
 
-success-carousel{    
+.success-carousel{    
     height: auto;
     max-width: 350px;    
-    display: flex;
-    margin-top: 20px;
-    padding: 20px;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: column;    
     flex-wrap: nowrap;
-    border-radius: 5px;
-    box-shadow: darkgreen;   
-    
+    border-radius: 5px;    
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding-top: 5px;
 }
+
 
 .carousel-inner {
     margin-top: 10px;
@@ -404,8 +400,7 @@ success-carousel{
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 5px;    
 }
 
 .carousel-control {
@@ -425,39 +420,40 @@ success-carousel{
 
 .carousel-inner .carousel-item
 {
-    background-color: whitesmoke;
-    height: 700px; 
+    background-color: white;
+    height: 650px; 
 
 }
+
+.cardmedia  {
+    height: 250px;
+    position: absolute;
+    font-size: 12px;
+}
+
+
 .cardmedia .profile {
     background-color: green;
     display: block;
     justify-content: center; 
 }
 .cardmedia .profile img {  
-    border: 10px;
-    border-color: white;
-    max-width: 50%;       
-    
+    border: 0px;    
+    max-width: 50%;           
 }
 
-.card-media .company img {
-    background-color: #f9da73;
-    border-radius: 50%;      
-    top: 300px;
-    left: 200px;
-    display: none;    
-} 
+.card-body
+{
+    font-size: 14px;
+    height: 350px;
+}
 
-
-.card-body h4 {
-    
+.card-body h4 {    
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    
+    margin-left: 10px;   
 }
 
 .card-body h3 {
@@ -469,18 +465,33 @@ success-carousel{
     
 }
 
-.card-footer button {    
-    border: none;       
-    margin-right: 25%;
-    margin-left: 25%;    
-    border-radius: 5px;
-    height: 50px;
-    width: 50%;
-    background-color: #0f4447;
-    color: white;
-    
+.card-footer{
+    background-color: white;    
+    height: 100px;
+    border: none;
 }
 
+.card-footer button {    
+    margin-left: 15%;
+    margin-right: 15%;    
+    height: 50px;
+    width: 70%;
+    background-color: #0f4447;
+    color: white;    
+    font-size: 12px;
+}
+
+.carousel-item .card-media .company {
+    display: block;
+    background-color: #f9da73;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;          
+    position: absolute;    
+    top: 150px;
+    left: 175px;
+    align-items: center;
+}
 
 
 @media(max-width: 675px) {
