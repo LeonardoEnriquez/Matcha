@@ -1,0 +1,536 @@
+/* Cuerpo de la seccion main */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fffbf7;
+    box-sizing: border-box;
+    text-align: middle;    
+}
+
+.fixed-header {
+    background-color: #fffbf7;
+    width: 100%;
+    text-emphasis: auto;
+}
+
+.fixed-header>* {
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+.header {
+    background-color: white;
+    display: inline-block;
+    position: fixed;
+    align-items: center;
+    top: 0px;
+    width: 100%; 
+}
+
+.header>* {
+    text-align: center;
+    display: inline-block;
+    line-height: 5px;
+    vertical-align: middle;
+    height: 50px;
+}
+
+.logo {
+    width: 15px;
+    margin-top: 10px;
+}
+
+.navbar {
+    width: 70%;
+    color: #025157;
+    margin-top:30px;
+}
+
+.action {
+    width: 15%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.menu>* {
+    text-align: center;
+    margin: 0px 15px;
+    color: #025157;
+    display: inline;
+    margin-block-start: 0px;
+    
+}
+
+.action label {
+    color: #67b54b;
+    width: 100px;
+    height: 20px;
+    text-align: left;
+}
+
+.action button {
+    background-color: #67b54b;
+    color: white;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 185px;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+}
+
+main h1 {
+    color: #025157;
+    font-style: normal;
+    font-size: 40px;
+}
+
+main h2 {
+    color: #626366;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.signup-form input {
+    color: #46484c;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    margin-left: 0px;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+.signup-form button {
+    color: #fff;
+    background-color: #0f4447;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    margin-left: -10 px;
+    padding-left: 0 px;
+    border-style: none;
+    border-radius: 5%;
+}
+
+.main p {
+    color: #626366;
+}
+
+.banner img {
+    width: auto;
+    vertical-align: middle;
+    border-style: none;
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+}
+
+.intro img {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*Sesion promo*/
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    justify-content: center;
+    margin-top: 100px;
+    max-width: 80%;
+    align-items: center;
+    background-color: white;
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+}
+
+.publish_blog {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: 50%;
+}
+
+.publish_blog h2 {
+    color: #025157;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 800;
+    justify-content: left;
+    align-items: left;
+}
+
+.publish_blog>p {
+    margin-top: 35px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: black;
+    justify-content: left;
+    align-items: left;
+}
+
+.publish_blog .signup {
+    color: #4f5657;
+    line-height: 2.5;
+    font-size: 14px;
+    padding: 5px;
+    justify-content: left;
+    align-items: left;
+}
+
+.publish_blog .signup .email {
+    color: #626366;
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-style: dashed;
+    border-radius: 5px;
+ 
+}
+
+.publish_blog .signup button {
+    color: white;
+    background-color: #0f4447;
+    width: 100px;
+    height: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-style: none;
+    border-radius: 5px;
+ 
+}
+
+.features {
+    background-color: #025157;
+    width: 100%;
+    margin-top: 100px;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    gap: 20px 2px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    justify-items: center;
+   
+}
+
+.feature-content {
+    font-size: 14px;
+    padding: 10px 10px 10px;
+    line-height: 30px;
+}
+
+.feature-content figure img {
+    width: 30px;
+}
+
+.feature-content h3 {
+    font-size: 1.5em;
+    color: #343434;
+    font-weight: 400;
+}
+
+.feature-content p {
+    font-size: 1em;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+.feature-content a {
+    font-size: 1em;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.feature-image figure img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.feature-image figure,
+.feature-card .feature-image img {
+    margin-top: 0;
+    height: 100%;
+}
+
+/*Inicia caso de estudio de exito*/
+
+.success-stories {
+    background-color: #a1d683;    
+    padding: 5% 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;   
+    width:100%;
+    height: auto;
+    
+}
+
+.success-stories > div {   
+   text-align: center;
+   line-height: 25px;
+   font-size: 20px;
+   
+}
+
+.stories-content {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: left;
+    padding-top: 20px;
+    
+}
+
+.stories-content .overview {
+    background-color: #a1d683;
+    
+}
+.stories-content .brand {
+    background-color:#a1d683;
+        
+}
+
+.stories-content .overview h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #025157;
+}
+
+.stories-content .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    margin-top: 15px;
+}
+
+.stories-content .overview button {
+    font-size: 14px;
+    padding: 12 px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    width: 200px;
+}
+
+.stories-content .brand img {
+    background-color: #a1d683;
+    width: 40%;   
+    margin-top:20px;
+    
+}
+
+
+.success-stories .stories-content {
+    background-color: #a1d683;
+    flex-wrap: nowrap;        
+    display: flex;
+    flex-direction: column;
+
+}
+/* Inicia carrusel*/
+
+success-carousel{    
+    height: auto;
+    max-width: 350px;    
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    box-shadow: darkgreen;   
+    
+}
+
+.carousel-inner {
+    margin-top: 10px;
+    padding-top: 5px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-control {
+    position: initial;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+
+} 
+
+.carousel-indicators {
+    position: initial;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.carousel-inner .carousel-item
+{
+    background-color: whitesmoke;
+    height: 700px; 
+
+}
+.cardmedia .profile {
+    background-color: green;
+    display: block;
+    justify-content: center; 
+}
+.cardmedia .profile img {  
+    border: 10px;
+    border-color: white;
+    max-width: 50%;       
+    
+}
+
+.card-media .company img {
+    background-color: #f9da73;
+    border-radius: 50%;      
+    top: 300px;
+    left: 200px;
+    display: none;    
+} 
+
+
+.card-body h4 {
+    
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    
+}
+
+.card-body h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    
+}
+
+.card-footer button {    
+    border: none;       
+    margin-right: 25%;
+    margin-left: 25%;    
+    border-radius: 5px;
+    height: 50px;
+    width: 50%;
+    background-color: #0f4447;
+    color: white;
+    
+}
+
+
+
+@media(max-width: 675px) {
+    .header {
+        margin: 20px 20px 0px;
+    }
+    .navbar {
+        text-align: left;
+    } 
+    .main {
+        margin: 40px 10px 0px;
+        text-align: center;
+    }
+    .main > h1 {
+        font-size: 40px
+    }
+    .main img {
+        width:100%;
+    }
+    .promo {
+        flex-direction: column;
+        width: 90%;
+    }
+    .publish h1 {
+        font-size: 40px;
+    }
+    .publish > p {
+        font-size: 16px;
+        color: #343434;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .features {
+        grid-template-columns: 1fr;
+        padding: 5% 5px;
+    }
+    .feature-card .feature-image{
+        display: none;  
+    }
+    .features .feature-card {
+        padding: 20px;
+    }
+    .features .feature-card .feature-content img {
+        width: 80px;
+    }
+    .features .feature-card .feature-content {
+        width: 90%;
+    }
+    .features .feature-card .feature-content h3 {
+        font-family: "Open Sans", sans-serif;
+    }
+}
