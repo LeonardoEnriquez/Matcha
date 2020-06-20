@@ -387,7 +387,6 @@ main h2 {
     flex-direction: column;    
     flex-wrap: nowrap;
     border-radius: 5px;    
-    display: flex;
     justify-content: center;
     align-items: left;
     padding-top: 5px;
@@ -488,13 +487,43 @@ main h2 {
     width: 70px;
     border-radius: 50%;          
     position: absolute;    
-    top: 150px;
-    left: 175px;
+    top: 150px;    
+    margin-left: 150px;
     align-items: center;
+    
+}
+
+/* inicia parte match work */
+
+.match-work {
+    display: grid;
+    padding: 10%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+}
+.match-work header {
+  background-color: #f9da73;
+  grid-column: 1/4;
+  grid-row: 1;
+  justify-content: center;
+}
+
+.match-work .steps .card-step  {
+    background-color: gray;
+    grid-column: 1;
+    grid-row:2;
+  
 }
 
 
+
+
 @media(max-width: 675px) {
+    .navbar, .action {
+        display: none;        
+    }
     .header {
         margin: 20px 20px 0px;
     }
