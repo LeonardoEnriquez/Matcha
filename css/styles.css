@@ -300,6 +300,9 @@ main h2 {
     height: 100%;
 }
 
+
+
+
 /*Inicia caso de estudio de exito*/
 
 .success-stories {
@@ -313,12 +316,6 @@ main h2 {
     height: auto;
     
 }
-
-/* .success-stories > div {   
-   text-align: center;
-   line-height: 25px;
-   font-size: 20px;   
-} */
 
 .stories-content {
     display: flex;
@@ -501,7 +498,7 @@ main h2 {
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,1fr);
     grid-gap: 10px;
-    grid-auto-rows: auto;
+    display:none;
 }
 .match-work header {
   background-color: #f9da73;
@@ -516,8 +513,6 @@ main h2 {
     grid-row:2;
   
 }
-
-
 
 
 @media(max-width: 675px) {
