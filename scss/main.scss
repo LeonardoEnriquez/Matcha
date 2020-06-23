@@ -50,4 +50,41 @@
       width: 180px;
       margin-bottom: 15px;
     }
+  .card-title {
+    font-size: 24px;
+    color: $gray;
+  } 
+  .metadata {
+    font-weight: 500;
+    font-size:  14px;
+    color: $light-gray;
+    .category {
+      color: $light-green;
+    }
   }
+  .card-text {
+    color: $gray;
+    font-size: 18px;
+    line-height: 1.5em;
+    min-height: 6em;
+    .read-more a {
+      text-decoration: underline;
+      cursor: point;
+    }
+  }
+  .author {
+    & img {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      
+    }
+    & p {
+      margin-left: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+
+}

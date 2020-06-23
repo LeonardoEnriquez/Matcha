@@ -45,5 +45,38 @@
   width: 180px;
   margin-bottom: 15px;
 }
+.blog .card-title {
+  font-size: 24px;
+  color: #4a4a4a;
+}
+.blog .metadata {
+  font-weight: 500;
+  font-size: 14px;
+  color: #979797;
+}
+.blog .metadata .category {
+  color: #67b54b;
+}
+.blog .card-text {
+  color: #4a4a4a;
+  font-size: 18px;
+  line-height: 1.5em;
+  min-height: 6em;
+}
+.blog .card-text .read-more a {
+  text-decoration: underline;
+  cursor: point;
+}
+.blog .author img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.blog .author p {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+}
 
 /*# sourceMappingURL=output.css.map */
