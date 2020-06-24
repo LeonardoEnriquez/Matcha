@@ -1,5 +1,20 @@
 @use 'global' as *;
 
+.card 
+{
+  & .card-body 
+  {
+    & .btn-primary 
+    {
+      border-radius:8px;
+      background-color: $dark-green-title;
+      border-style: none;
+    }
+  
+  }
+}
+
+
 .blog {
     background-color: $white;
     max-width: unset;
@@ -42,6 +57,7 @@
       }
     }
   
+   
     button {
       height: auto;
       border-top-left-radius: 8px;

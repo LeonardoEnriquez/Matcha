@@ -6,6 +6,12 @@
   color: #025157;
 }
 
+.card .card-body .btn-primary {
+  border-radius: 8px;
+  background-color: #025157;
+  border-style: none;
+}
+
 .blog {
   background-color: #ffffff;
   max-width: unset;

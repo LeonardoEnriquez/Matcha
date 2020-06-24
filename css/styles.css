@@ -546,6 +546,8 @@ main h2 {
     grid-template-columns: repeat(4,1fr);
     justify-items:end;
     column-gap: 5px;
+    border-style: none;
+    justify-content: space-around;
 }
 
 .steps .card-step {
@@ -556,6 +558,7 @@ main h2 {
     border-color: #aaa7a7;
     border-radius: 5px;
     position: relative;
+    place-self: center;
 }
 
 .card-step-image {
@@ -613,6 +616,7 @@ main h2 {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:auto;    
     background-color: #fff;
+    display: none;
 }
 
 
@@ -654,26 +658,35 @@ main h2 {
     position: absolute;
     left: 0px;
 }
+.card-body .process-icon {
+    color: #6abf4b;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 10px;
+}
+.card .process-description {
+    margin-left: 20px;
+}
 
-
-.blog .row .col .process-list .process .process-icon img {
+.process .process-icon img {
     display: inline-block;    
     width: 80%;
     
 } 
 
-.blog .row .col .process-list .process .process-decription{
+.process .process-description{
     margin-left: 40px;
     left: 50px;
 }
-.blog .row .col .process-list .process .process-decription h3{
+.process .process-decription h3{
     color: #025157;
     margin-bottom: 0;
     font-size: 30px;
     font-weight: 500;
 }
 
-.blog .row .card {
+.row .card {
     display: flexbox;
     flex-direction: column;
     min-width: 0;
@@ -685,10 +698,21 @@ main h2 {
     height: 650px;
 }
 
-.blog .row .card-img-top {
+.col .row .card-img-top {
     border-top-left-radius: calc(.25em-1px);
     flex-shrink: 0;
     width: 100%;
+    
+}
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem; 
 }
 
 .card .card-body .author {
@@ -702,6 +726,8 @@ main h2 {
     height: 35px;
     
 }
+
+
 
 @media(max-width: 675px) {
     .navbar, .action {
