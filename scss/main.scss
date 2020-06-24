@@ -1,21 +1,30 @@
 @use 'global' as *;
-
 .card 
-{
-  & .card-body 
-  {
-    & .btn-primary 
     {
-      border-radius:8px;
-      background-color: $dark-green-title;
-      border-style: none;
+      
+      & .card-body 
+      {
+        & .btn-primary 
+        {
+          border-radius:8px;
+          background-color: $dark-green-title;
+          border-style: none;
+        }    
+      }
     }
-  
+
+  .card-body{
+    background-color: white;
+    & .card-title 
+      {
+        color: $dark-green-text;
+        font-weight: 800;
+        line-height: 45px;
+      } 
+   
   }
-}
-
-
-.blog {
+    
+    .blog {
     background-color: $white;
     max-width: unset;
     padding: 5% 10%;

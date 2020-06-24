@@ -12,6 +12,15 @@
   border-style: none;
 }
 
+.card-body {
+  background-color: white;
+}
+.card-body .card-title {
+  color: #025157;
+  font-weight: 800;
+  line-height: 45px;
+}
+
 .blog {
   background-color: #ffffff;
   max-width: unset;

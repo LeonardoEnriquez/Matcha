@@ -727,6 +727,59 @@ main h2 {
     
 }
 
+.home-people {
+    background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png);
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    height: 350px;
+}
+
+.try-it {
+    padding: 5% 5% 2%;
+    background-color: #96d178;
+    margin-top: -30px;
+}
+
+.try-it h2{ 
+    color: #025157;
+    font-size: 60px;
+    font-family: "Alegreya", serif;
+}
+
+.try-it form {
+    height: 55px;
+}
+
+.try-it form input, button {
+   height: 100%;
+   border-radius:8px;
+}
+
+.try-it .signup-form input {
+    height: 100%;
+    border-radius: 8px;
+}
+.try-it .signup-form button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px; 
+    cursor: pointer;
+    width: 180px;
+    height: 100%;
+    
+}
+
+.try-it p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 
 
 @media(max-width: 675px) {
