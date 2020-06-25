@@ -1,0 +1,7 @@
+#Ignore folders
+\videos
+#Ignore extensiones
+*.zip
+
+#Ignore 
+
