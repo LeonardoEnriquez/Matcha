@@ -1,0 +1,7 @@
+#Ignore folders
+\videos
+\bootstrap-4.5.0-dist
+#Ignore extensiones
+*.zip
+
+

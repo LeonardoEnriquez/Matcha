@@ -1,7 +1,8 @@
-@use 'global' as *;
+/*@import 'global';*/
+@use "global" as g;
+
 .card 
-    {
-      
+    {     
       & .card-body 
       {
         & .btn-primary 
@@ -17,7 +18,7 @@
     background-color: white;
     & .card-title 
       {
-        color: $dark-green-text;
+        color: g.$dark-green-text;
         font-weight: 800;
         line-height: 45px;
       } 
